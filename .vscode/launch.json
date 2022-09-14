@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-Lab1serverApplication<lab1server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.rdjx.lab1server.Lab1serverApplication",
+      "projectName": "lab1server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}

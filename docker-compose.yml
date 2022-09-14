@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  web:
+    image: lab1-server-image
+    ports:
+      - "9000:9000"
+    environment:
+      - PORT=9000
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://onymhhldrkfsdl:022f74f1bbda308f083fab494dbd85f8ba592e3323a90478c4dc6352877f6e41@ec2-34-252-216-149.eu-west-1.compute.amazonaws.com:5432/dbcbtq1qc6938g
+      - SPRING_DATASOURCE_USERNAME=onymhhldrkfsdl
+      - SPRING_DATASOURCE_PASSWORD=022f74f1bbda308f083fab494dbd85f8ba592e3323a90478c4dc6352877f6e41
+      - SPRING_DATASOURCE_DRIVER-CLASS-NAME=org.postgresql.Driver
+  db:
+    image: postgres:14
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=dev_password
+      - POSTGRES_USER=si5_sacc
+      - POSTGRES_DB=td_1
